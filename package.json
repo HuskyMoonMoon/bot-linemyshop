@@ -1,0 +1,19 @@
+{
+  "name": "bot-linemyshop",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Chayapol Limanon <chayapol.limanon@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cypress": "^8.3.0",
+    "moment": "^2.29.1"
+  },
+  "devDependencies": {
+    "typescript": "^4.3.5"
+  },
+  "scripts": {
+      "babylovett": "cypress run --headed --record false --no-exit --spec ./cypress/integration/linemyshop/babylovett.spec.ts",
+      "babydiary": "cypress run --headed --record false --no-exit --spec ./cypress/integration/linemyshop/babydiary.spec.ts",
+      "cypress": "cypress open"
+  }
+}
